@@ -1,0 +1,7 @@
+import { student } from "@/app/util/db";
+import { NextResponse } from "next/server";
+
+export function GET(){
+        const data = student;
+        return NextResponse.json(data,{status:200})
+}
